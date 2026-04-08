@@ -2,11 +2,9 @@
 
 This repository contains the code used to generate the empirical figures for the experimental appendix of the paper `Multi-Agent Lipschitz Bandits`.
 
-It intentionally contains only the experimental artifacts:
+It intentionally contains only the experimental code:
 
 - the synthetic experiment runner,
-- the generated figures,
-- the aggregated JSON summary of the paper-mode runs,
 - lightweight setup instructions.
 
 The paper source itself, including all TeX files, is not included here.
@@ -15,10 +13,6 @@ The paper source itself, including all TeX files, is not included here.
 
 ```text
 experiments/run_experiments.py
-experiments/results/summary_paper.json
-img/empirical_regret_main.png
-img/empirical_collisions.png
-img/empirical_pathology.png
 requirements.txt
 ```
 
@@ -40,7 +34,7 @@ From the repository root:
 python3 experiments/run_experiments.py --mode paper
 ```
 
-This regenerates:
+This writes outputs to:
 
 - `img/empirical_regret_main.png`
 - `img/empirical_collisions.png`
