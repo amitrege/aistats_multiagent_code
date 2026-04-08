@@ -2,12 +2,10 @@
 
 This repository contains the code used to generate the empirical figures for the experimental appendix of the paper `Multi-Agent Lipschitz Bandits`.
 
-It intentionally contains only the experimental code:
+It contains:
 
 - the synthetic experiment runner,
 - lightweight setup instructions.
-
-The paper source itself, including all TeX files, is not included here.
 
 ## Repository layout
 
@@ -51,5 +49,5 @@ The script currently generates three appendix experiments:
 
 ## Notes
 
-- The baseline is intentionally simple: each player runs an independent global fixed-grid UCB routine and ignores the presence of the other players except through collision-censored feedback.
+- The baseline is simple: each player runs an independent global fixed-grid UCB routine and ignores the presence of the other players except through collision-censored feedback.
 - For the empirical illustration, the protocol pools successful Phase I and Phase II identification samples when forming the common target set. This keeps the experiments focused on the coordination-versus-learning decomposition highlighted by the paper.
