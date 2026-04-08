@@ -4,3 +4,5 @@ __pycache__/
 .venv/
 .matplotlib_cache/
 experiments/results/summary_quick.json
+img/*.png
+experiments/results/*.json
